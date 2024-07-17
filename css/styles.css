@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --parchment: #f0ead2ff;
+    --tea-green: #919678;
+    --olivine: #5c6641;
+    --olive-green: #7c8a61;
+    --umber: #6c584cff;
+}
+
+
+
+body {
+    background-color: var(--parchment);
+    border: 0;
+    margin: 0;
+    
+}
+.hero-section {
+    font-family: baskervville sc;
+    font-size: 20px;
+    color: var(--umber);
+    /* border-bottom: var(--olivine) .5rem solid; */
+    margin: 0;
+    border-bottom: .5rem solid transparent;
+    border-image: linear-gradient(45deg, var(--olivine),var(--parchment));
+    border-image-slice: 1;
+}
+.nav-wrapper {
+    display: flex;
+}
+ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+a {
+    display:flex;
+    font-family: baskervville sc;
+    font-size: 20px;
+    color: var(--umber);
+    text-decoration: none;
+}
+li {
+    margin-inline: 1rem;
+}
+.navlink:hover {
+    border: black solid 1px;
+}
+.burger {
+    border: none;
+    color: var(--parchment);
+    background-color: var(--umber);
+    width: 25px;
+    height: 25px;
+} 
+h1 {
+    color: var(--olive-green);
+    font-family: baskervville sc;
+}
+
+.projects-section {
+    padding: .5rem;
+}
+.projects-section h3 {
+    font-family: baskervville sc;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--umber);
+
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.card h4 {
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--olive-green);
+
+}
+.card img {
+    width: 100%;
+}
+.card a {
+    border: none;
+    background-color: var(--umber);
+    border-radius: 10px;
+    color: var(--parchment);
+    padding: .5rem;
+    font-family: poppins;
+    font-weight: 200;
+    font-size: 20px;
+}
+.card p {
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--umber);
+    height: 205px;
+}
+
+@media (min-width: 650px) {
+    .card-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .hero-section {
+        padding-left: 7rem ;
+    }
+   
+}
+

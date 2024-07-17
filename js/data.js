@@ -16,6 +16,7 @@ const projectData =[
         image: "./img/portfolio-icecream.png",
         description: "In the Ice Cream Ordering Form, I learned HTML form elements, CSS styling, and submitting the form using JavaScript processing. The form incorporates text elements, text area, radio buttons, checkboxes, and a select dropdown.",
         link: "https://ogkodingkat.github.io/ice-cream-form/",
+        
     }
 ]
 
