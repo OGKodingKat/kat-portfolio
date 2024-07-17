@@ -111,6 +111,7 @@ h1 {
     height: 205px;
 }
 
+
 @media (min-width: 650px) {
     .card-wrapper {
         grid-template-columns: repeat(3, 1fr);

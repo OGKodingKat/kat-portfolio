@@ -23,12 +23,13 @@ function displayCards() {
 }
 displayCards()
 
-
+document.querySelector(".burger").addEventListener("click", showHamburger)
 const burger = document.querySelector(".burger i");
 const nav = document.querySelector(".nav");
 function showHamburger() {
   burger.classList.toggle("fa-times");
   nav.classList.toggle("nav-active"); 
 }
+
 // console.log("hello beautiful");
 console.log(projectData);
