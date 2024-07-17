@@ -110,7 +110,28 @@ h1 {
     color: var(--umber);
     height: 205px;
 }
+ footer {
+    text-align: center;
+    font-family: baskervville sc;
+    font-size: 20px;
+    color: var(--umber);
+    margin: 0;
+    border-top: .5rem solid transparent;
+    border-image: linear-gradient(45deg, var(--olivine),var(--parchment));
+    border-image-slice: 1;
 
+}
+.contact-section {
+    text-align: center;
+    font-family: poppins;
+    font-weight: 200;
+    font-size: 20px;
+    color: var(--umber);
+    margin: 0;
+    border-top: .5rem solid transparent;
+    border-image: linear-gradient(45deg, var(--olivine),var(--parchment));
+    border-image-slice: 1;
+}
 
 @media (min-width: 650px) {
     .card-wrapper {
@@ -119,6 +140,6 @@ h1 {
     .hero-section {
         padding-left: 7rem ;
     }
-   
+    
 }
 
