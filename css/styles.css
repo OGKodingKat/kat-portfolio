@@ -65,6 +65,7 @@ li {
 h1 {
     color: var(--olive-green);
     font-family: baskervville sc;
+    margin-left: 1rem;
 }
 
 .projects-section {
@@ -174,8 +175,9 @@ h1 {
     font-size: 16px;
     display: none;
 }
-/* .lets-go {
+.lets-go {
     text-align: center;
+    border-top: solid 8px var(--olivine) ;
 }
 .nytime {
     padding: 50px; 
@@ -187,7 +189,23 @@ h1 {
     color:var(--parchment);
     background-color: var(--umber);
     border-radius: 10px;
-} */
+}
+.about {
+    display:flex;
+    font-family: poppins;
+    margin-left: 1rem;
+}
+
+form {
+    font-family: poppins;
+    color: var(--umber);
+    margin: 3rem;
+    border: var(--tea-green) dashed 2px;
+    padding: 2rem;
+    text-align: left;
+
+}
+
 @media (max-width: 650px) {
     .burger {
         display: block;
