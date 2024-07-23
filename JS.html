@@ -18,8 +18,8 @@
                     <li class="navlink"><a href="JS.html" target="_blank">JavaScript</a></li>
                     <li class="navlink"><a href="contact.html" target="_blank">Contact</a></li>
                     <li class="navlink"><a href="#" target="_blank">Resume</a></li>
-                    <li><i class="fa fa-github"></i></li>
-                    <li><i class="fa fa-linkedin"></i></li>
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
                 </ul>
             </nav>
             <button class="burger">
@@ -28,7 +28,42 @@
         </div>
     </header>
     <section class="lets-go">
-        <button class="nytime">What time is it in New York!</button>
+        <section class="jsfun-page-hero-section">
+            <section class="jspage-cards">
+              <div class="jscode-btn-container">
+                <button class="js-btn" id="js-colors-btn">I Want To Change The Colors</button>
+              </div>
+            </section>
+            <section id="colors-fun-wrapper" class="js-hide-form">
+              <form action="" class="color-fun-form" id="color-fun-form">
+                <h3>Fun With Colors</h3>
+          <div>
+            <label for="chooseColor">Fun With Colors</label>
+            <select id="chooseColor" name="choose-color" required>
+              <option value="choose-option" disbled selected hidden>Please choose an option</option>
+              <option value="#800080">Purple</option>
+              <option value="#ffff00">Yellow</option>
+              <option value="#008000">Green</option>
+              <option value="#ffa500">Orange</option>
+              <option value="#ff0000">Red</option>
+              <option value="#0000ff">Blue</option>
+            </select>
+          </div>
+          <div>
+            <label for="chooseType">Choose a type:</label>
+            <select id="chooseType" name="choose-type" required>
+              <option value="choose-option">--Please choose an option--</option>
+              <option value="background">Background</option>
+              <option value="text-color">Text Color</option>
+            </select>
+          </div>
+          <button class="button">Submit</button>
+        </form>
+      </section>
+        <!-- <p>color of text will keep changing on each click</p>
+
+<button  onClick="getRandomColor()">Click on me</button><br> -->
+        <!-- <button class="nytime">What time is it in New York!</button> -->
     </section>
     <footer><p> &copy;  2024 Kat Marie. All Rights Reserved.</p></footer>
     <script type="module" src="js/javascriptpage.js"></script>
