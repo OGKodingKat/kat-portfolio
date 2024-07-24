@@ -272,6 +272,14 @@ form {
         display: grid;
         grid-template-columns: 1fr;
     }
+    .about-page-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .about-me {
+        display: grid;
+        
+    }
 }
 
 
