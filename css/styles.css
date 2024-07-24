@@ -248,6 +248,13 @@ form {
   .display-none {
     display: none;
   }
+  #back-to-main-btn {
+    border: none;
+    color: var(--parchment);
+    background-color: var(--umber);
+    border: none;
+    border-radius: 10px;
+  }
   
 @media (max-width: 649px) {
     .burger {

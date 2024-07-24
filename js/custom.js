@@ -31,5 +31,17 @@ function showHamburger() {
   nav.classList.toggle("nav-active"); 
 }
 
+// Select the button element
+const backButton = document.getElementById("back-to-main-btn");
+
+// Add event listener for button click
+backButton.addEventListener("click", function() {
+    // Navigate to the main page URL
+    window.location.href = "https://ogkodingkat.github.io/kat-portfolio/"
+
+});
+
+
+
 // console.log("hello beautiful");
 // console.log(projectData);
