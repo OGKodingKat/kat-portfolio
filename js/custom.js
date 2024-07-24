@@ -32,4 +32,4 @@ function showHamburger() {
 }
 
 // console.log("hello beautiful");
-console.log(projectData);
+// console.log(projectData);

@@ -244,6 +244,10 @@ form {
   #myToggleButton {
     transition: background-color 0.3s ease;
   }
+
+  .display-none {
+    display: none;
+  }
   
 @media (max-width: 649px) {
     .burger {
@@ -274,11 +278,14 @@ form {
     }
     .about-page-content {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
     }
     .about-me {
         display: grid;
         
+    }
+    #about-page-img {
+        display: flex;
     }
 }
 

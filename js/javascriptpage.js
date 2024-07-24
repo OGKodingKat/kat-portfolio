@@ -18,42 +18,33 @@
 
 // let randomColorRgbValues = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
 
-
 const colorFormButton = document.getElementById("js-colors-btn");
-const colorForm = document.getElementById("color-fun-form");
-
-
-//js fun event listeners------------------------------------------------------------------------------------
+const colorForm = document.getElementById("color-form");
 colorFormButton.addEventListener("click", toggleColorForm);
+colorForm.addEventListener("submit", onColorFormSubmit)
 
-
-
-
-//js fun toggle----------------------------------------------------------------------------------------------
 function toggleColorForm() {
-    document.getElementById("colors-fun-wrapper").classList.toggle("js-hide-form");
+    console.log("click")
+    let wrapper = document.getElementById("color-form")
+    console.log(wrapper)
+    wrapper.classList.toggle("display-none");
   }
 
-//   function changeColor(colorFromUser, type) {
-//     console.log(colorFromUser, type)
-//     if(type === "background"){
-//       colorForm.style.backgroundColor = colorFromUser;
-//     } else {
-//       colorForm.style.color = colorFromUser;
-//     }
-//     const color = document.getElementById("color").value;
-//   colorForm.style.backgroundColor = colorFromUser;
-    
-//   }
-  
-//   //js fun colors submit functions
-//   function onColorFormSubmit(event) {
-//     console.log("color form submitted");
-//       event.preventDefault();
-//       const data = new FormData(event.target);
-//       const dataObject = Object.fromEntries(data.entries());
-//       console.log(dataObject);
-//       colorForm.reset();
-//       //above is boiler plate code
-//       changeColor(dataObject.colorSelect, dataObject.typeSelect)
-//   }
+function changeColor(selectedColor, type) {
+    console.log(selectedColor, type)
+    if(type === "background"){
+      colorForm.style.backgroundColor = selectedColor;
+    } else {
+      colorForm.style.color = selectedColor;
+    }
+  }
+  function onColorFormSubmit(event) {
+    console.log("color form submitted");
+      event.preventDefault();
+      const data = new FormData(event.target);
+      const dataObject = Object.fromEntries(data.entries());
+      console.log(dataObject);
+      colorForm.reset();
+      //above is boiler plate code
+      changeColor(dataObject.chooseColor, dataObject.chooseType)
+  }
