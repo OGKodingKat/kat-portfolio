@@ -29,6 +29,9 @@ body {
     padding-left: 2rem;
 }
 header {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
     margin: 1rem;
 }
 .nav-wrapper {
@@ -82,6 +85,8 @@ h1 {
 .card-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: auto;
 }
 
 .card {
@@ -110,13 +115,14 @@ h1 {
     font-family: poppins;
     font-weight: 200;
     font-size: 20px;
+    margin-bottom: 2em;
 }
 .card p {
     font-family: poppins;
     font-size: 14px;
     font-weight: 300;
     color: var(--umber);
-    height: 205px;
+    height: 140px;
 }
  footer {
     text-align: center;
@@ -259,7 +265,7 @@ form {
 @media (max-width: 649px) {
     .burger {
         display: block;
-        margin-right: -480px;
+       
     }
     .nav {
         display: none;
@@ -267,7 +273,7 @@ form {
         background: var(--parchment);
         position: absolute;
         top: 125px;
-        width: 40%;
+        width: 100%;
         flex-direction: column;
         padding: 0;
         transition: all 400ms;
@@ -295,5 +301,10 @@ form {
         display: flex;
     }
 }
+ @media ((min-width: 650px) and (max-width: 1075px))  {
+    .card p {
+        height: 260px;
+    }
+ }
 
 
