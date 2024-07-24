@@ -55,8 +55,9 @@ a {
 li {
     margin-inline: 1rem;
 }
-.navlink:hover {
-    border: black solid 1px;
+.navlink :hover {
+    color: orange;
+    
 }
 .burger {
     border: none;
@@ -254,14 +255,14 @@ form {
   .display-none {
     display: none;
   }
-  #back-to-main-btn {
+  /* #back-to-main-btn {
     border: none;
     color: var(--parchment);
     background-color: var(--umber);
     border: none;
     border-radius: 10px;
   }
-  
+   */
 @media (max-width: 649px) {
     .burger {
         display: block;
@@ -270,16 +271,24 @@ form {
     .nav {
         display: none;
         margin: 0;
-        background: var(--parchment);
+        background: var(--olive-green);
         position: absolute;
         top: 125px;
         width: 100%;
         flex-direction: column;
         padding: 0;
         transition: all 400ms;
+        color: var(--parchment);
+    }
+    a {
+        color: var(--parchment);
+    }
+    .navlink :hover  {
+        color: orange;
     }
     ul {
         flex-direction: column;
+        
     }
     .nav-active {
         display: block;
