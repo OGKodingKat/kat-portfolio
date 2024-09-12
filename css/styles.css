@@ -123,7 +123,7 @@ h1 {
     font-size: 14px;
     font-weight: 300;
     color: var(--umber);
-    height: 140px;
+    height: fit-content;
 }
  footer {
     text-align: center;
